@@ -1,0 +1,10 @@
+[Unit]
+Description=start script
+After=syslog.target
+
+[Service]
+ExecStart=/usr/local/bin/script.sh start
+Type=forking
+
+[Install]
+WantedBy=multi-user.target

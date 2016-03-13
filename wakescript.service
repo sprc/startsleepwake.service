@@ -1,0 +1,12 @@
+[Unit]
+Description=wake script
+After=suspend.target
+
+[Service]
+ExecStart=/usr/local/bin/script.sh wake
+Type=forking
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=suspend.target

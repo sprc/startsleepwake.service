@@ -1,0 +1,10 @@
+[Unit]
+Description=sleep script
+Before=sleep.target
+
+[Service]
+ExecStart=/usr/local/bin/script.sh sleep
+Type=forking
+
+[Install]
+WantedBy=sleep.target
